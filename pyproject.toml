@@ -9,10 +9,20 @@ packages = [{include = "cheap_chain"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 langchain = "^0.0.89"
-unstructured = "^0.4.11"
+unstructured = {extras = ["local-inference"], version = "^0.4.11"}
 faiss-cpu = "^1.7.3"
+isort = "^5.12.0"
+flake8 = "^6.0.0"
+mypy = "^1.0.1"
+beautifulsoup4 = "^4.11.2"
+sentence-transformers = "^2.2.2"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+# extra (detectron 2)
+# python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+
