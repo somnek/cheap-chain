@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cheap-chain"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "cheap_chain"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.0.89"
+unstructured = "^0.4.11"
+faiss-cpu = "^1.7.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
